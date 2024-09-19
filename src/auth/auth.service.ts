@@ -9,13 +9,13 @@ export class AuthService
     login()
     {   
         console.log("Signin was suecessful");
-        return "Signin was successful";
+        return {msg: "Signup was successful"};
     }
 
 
     signup()
     {
         console.log("Signup was suecessful");
-        return "Signup was successful";
+        return {msg: "Signup was successful"};
     }
 }

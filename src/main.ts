@@ -6,7 +6,7 @@ dotenv.config();
 
 
 const PORT = process.env.PORT || 5050;
-async function bootstrap() {
+async function start() {
 	const app = await NestFactory.create(AppModule);
   	await app.listen(PORT, () =>
   	{
@@ -14,4 +14,4 @@ async function bootstrap() {
 		
   	});
 }
-bootstrap();
+start();
